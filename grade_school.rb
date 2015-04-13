@@ -16,11 +16,11 @@ class School
       @school[grade] = [name]
     end
     @school[grade] = @school[grade].sort
+    @school = Hash[@school.sort]
     @school[grade]
   end
 
   def grade(student_grade)
     @school[student_grade] || []
   end
-
 end
