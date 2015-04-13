@@ -46,12 +46,10 @@ class SchoolTest < Minitest::Test
   end
 
   def test_get_students_in_a_non_existant_grade
-    skip
     assert_equal [], school.grade(1)
   end
 
   def test_sort_school # rubocop:disable Metrics/MethodLength
-    skip
     [
       ['Jennifer', 4], ['Kareem', 6],
       ['Christopher', 4], ['Kyle', 3]

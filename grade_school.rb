@@ -10,7 +10,7 @@ class School
   end
 
   def add(name, grade)
-    if @school[grade] != nil
+    if @school[grade]
       @school[grade] << name
     else 
       @school[grade] = []
@@ -18,10 +18,11 @@ class School
     end
     @school[grade] = @school[grade].sort
     @school[grade]
+    
   end
 
   def grade(student_grade)
-    @school[student_grade]
+    @school[student_grade] || []
   end
 
 end
