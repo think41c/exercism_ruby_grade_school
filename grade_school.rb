@@ -1,15 +1,21 @@
 class School
-  def to_hash
+  def initialize 
     @school = {}
+    @name = []
+  end
+
+  def to_hash
+    @school
   end
 
   def add(name, grade)
-    school = {}
-    school[grade] = name
-    school
+    @school[grade] = [name]
+    @school
   end
 
   def grade
   end
 
 end
+a = School.new
+p a.add('Aimee', 2)
