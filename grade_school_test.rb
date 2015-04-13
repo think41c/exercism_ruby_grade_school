@@ -32,7 +32,6 @@ class SchoolTest < Minitest::Test
   end
 
   def test_get_students_in_a_grade
-    skip
     school.add('Bradley', 5)
     school.add('Franklin', 5)
     school.add('Jeff', 1)

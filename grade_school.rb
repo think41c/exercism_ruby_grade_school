@@ -18,7 +18,8 @@ class School
     end
   end
 
-  def grade
+  def grade(student_grade)
+    @school[student_grade]
   end
 
 end
