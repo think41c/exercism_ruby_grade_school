@@ -1,7 +1,8 @@
 class School
   def initialize 
-    @school = {}
+    @school = Hash.new
     @name = []
+    @new_name = []
   end
 
   def to_hash
@@ -9,14 +10,21 @@ class School
   end
 
   def add(name, grade)
-    @name << name
-    @school[grade] = @name
-    @school
+    if @school[grade] != nil
+      @school[grade] << name
+    else 
+      @school[grade] = []
+      @school[grade] << name
+    end
   end
 
   def grade
   end
 
 end
-# a = School.new
-# p a.add('Aimee', 2)
+a = School.new
+p a.add('Aimee', 2)
+p a.to_hash
+
+p a.add('Aimeeppp', 2)
+p a.to_hash
