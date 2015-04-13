@@ -9,7 +9,8 @@ class School
   end
 
   def add(name, grade)
-    @school[grade] = [name]
+    @name << name
+    @school[grade] = @name
     @school
   end
 
@@ -17,5 +18,5 @@ class School
   end
 
 end
-a = School.new
-p a.add('Aimee', 2)
+# a = School.new
+# p a.add('Aimee', 2)
