@@ -16,6 +16,8 @@ class School
       @school[grade] = []
       @school[grade] << name
     end
+    @school[grade] = @school[grade].sort
+    @school[grade]
   end
 
   def grade(student_grade)
@@ -23,9 +25,3 @@ class School
   end
 
 end
-a = School.new
-p a.add('Aimee', 2)
-p a.to_hash
-
-p a.add('Aimeeppp', 2)
-p a.to_hash
