@@ -12,7 +12,7 @@ class School
   def add(name, grade)
     if @school[grade]   
       @school[grade] << name
-    else 
+    else
       @school[grade] = [name]
     end
     @school[grade].sort!
