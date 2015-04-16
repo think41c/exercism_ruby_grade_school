@@ -24,4 +24,5 @@ class School
   end
 end
 
-#TESTING 
+#TESTING
+# Github potentially glitched due to internet connectino? 
