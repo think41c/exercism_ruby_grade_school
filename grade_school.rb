@@ -10,14 +10,13 @@ class School
   end
 
   def add(name, grade)
-    if @school[grade]    
+    if @school[grade]   
       @school[grade] << name
     else 
       @school[grade] = [name]
     end
-    @school[grade] = @school[grade].sort
+    @school[grade].sort!
     @school = Hash[@school.sort]
-    @school[grade]
   end
 
   def grade(student_grade)
