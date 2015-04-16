@@ -23,6 +23,3 @@ class School
     @school[student_grade] || []
   end
 end
-
-#TESTING
-# Github potentially glitched due to internet connectino? 
