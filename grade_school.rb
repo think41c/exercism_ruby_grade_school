@@ -1,8 +1,8 @@
 class School
   def initialize 
     @school = {}
-    @name = []
-    @new_name = []
+    # @name = []
+    # @new_name = []
   end
 
   def to_hash
